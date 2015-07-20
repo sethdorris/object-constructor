@@ -1,6 +1,6 @@
 var Tree = function(name, leafShape, color, size) {
 	this.name = name;
-	this.leafShape = leafShape;
+	this["leaf shape"] = leafShape;
 	this.color = color;
 	this.size = size;
 }
@@ -16,7 +16,9 @@ var treeHolderElement = document.getElementById("tree-holder");
 
 for (var i = 0; i < tree_array.length; i++) {
 	treeHolderElement.innerHTML += "<div>" + "Tree name: " + tree_array[i].name + "<br>" +
-	 "The shape of the leaf is: " + tree_array[i].leafShape + " <br>" +
+	 "The shape of the leaf is: " + tree_array[i]["leaf shape"] + " <br>" +
 	 "The color of the tree is: " + tree_array[i].color + "<br>" + 
 	 "The size of the tree is: " + tree_array[i].size + "<br>" + "</div>";
 }
+
+console.log(redwood);
