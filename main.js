@@ -1,8 +1,8 @@
 var Tree = function(name, leafShape, color, size) {
 	this.name = name;
 	this.leafShape = leafShape;
-    this.color = color;
-    this.size = size;
+	this.color = color;
+	this.size = size;
 }
 
 var redwood = new Tree("Redwood", "Oblong", "Brown", "Huge");
